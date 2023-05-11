@@ -29,6 +29,7 @@ app.use("/api", require("./routes/authRouter"));
 app.use("/api", require("./routes/otpRouter"));
 app.use("/api", require("./routes/user"));
 app.use("/api", require("./routes/notificationRouter"));
+app.use("/api", require("./routes/cryptoRouter"));
 
 app.use((err, _, res, __) => {
   res.status(err.status || 500).json({
